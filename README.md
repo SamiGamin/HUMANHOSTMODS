@@ -1,7 +1,7 @@
-# HUMANHOSTMODS - Mods para HumanitZ
+# HUMANHOSTMODS - Mods para Human Host
 
 > [!NOTE]
-> Colección de mods avanzados para el videojuego de supervivencia **HumanitZ**, desarrollados en C# utilizando el framework **BepInEx 5** y **Harmony** para la inyección de código y parches en tiempo de ejecución. Esta suite está diseñada tanto para la depuración y desarrollo de contenido como para ofrecer una experiencia personalizada a administradores de servidores y jugadores.
+> Colección de mods avanzados para el videojuego de supervivencia **Human Host**, desarrollados en C# utilizando el framework **BepInEx 5** y **Harmony** para la inyección de código y parches en tiempo de ejecución. Esta suite está diseñada tanto para la depuración y desarrollo de contenido como para ofrecer una experiencia personalizada a administradores de servidores y jugadores.
 
 ---
 
@@ -21,7 +21,7 @@ El repositorio está compuesto por los siguientes **5 mods**:
 
 ### 1. DeveloperItemSpawner (Consola de Spawneo de Ítems)
 
-Este mod añade una potente consola de desarrollo gráfica integrada en la interfaz de usuario de **HumanitZ**, ideal para creadores de contenido, administradores o desarrolladores.
+Este mod añade una potente consola de desarrollo gráfica integrada en la interfaz de usuario de **Human Host**, ideal para creadores de contenido, administradores o desarrolladores.
 
 #### Características
 * **Extractor de Catálogo Dinámico**: Escanea los recursos (`Addressables`) del juego en memoria y exporta todos los ítems detectados con sus identificadores de recursos internos en el archivo `BepInEx\config\items_dump.txt`.
@@ -31,7 +31,7 @@ Este mod añade una potente consola de desarrollo gráfica integrada en la inter
 * **Diseño Ajustado**: Interfaz posicionada a una altura segura (`Y = 120`) para no solapar los paneles superiores nativos y navegación fluida mediante un contenedor con barra de desplazamiento (`ScrollView`).
 
 #### Configuración
-Este mod **no genera un archivo `.cfg`**, ya que obtiene los recursos de forma dinámica y autogestionada directamente de la base de datos interna de **HumanitZ** al momento del escaneo.
+Este mod **no genera un archivo `.cfg`**, ya que obtiene los recursos de forma dinámica y autogestionada directamente de la base de datos interna de **Human Host** al momento del escaneo.
 
 #### Controles
 * **`F10`**: Activa o desactiva la consola en pantalla (también habilita y bloquea el cursor del ratón en el juego).
@@ -178,7 +178,7 @@ Todos los mensajes de depuración, escaneo e inspección se vuelcan directamente
 
 ### Paso 1: Instalación de BepInEx 5 en el juego
 1. Descarga el paquete de **BepInEx 5 (versión x64)** desde su repositorio oficial en GitHub.
-2. Ve a la carpeta de instalación de tu juego **HumanitZ** (donde se encuentra `HumanitZ.exe`).
+2. Ve a la carpeta de instalación de tu juego **Human Host** (donde se encuentra `Human Host.exe`).
    * Si usas Steam, haz clic derecho sobre el juego -> *Administrar* -> *Ver archivos locales*.
 3. Copia y extrae el contenido del zip de BepInEx en esa carpeta. Deberías ver la carpeta `BepInEx`, el archivo `doorstop_config.ini` y `winhttp.dll` en la raíz.
 4. Arranca el juego al menos una vez para que BepInEx inicialice su entorno y cree los subdirectorios indispensables (`config`, `plugins`, `patchers`).
@@ -186,7 +186,7 @@ Todos los mensajes de depuración, escaneo e inspección se vuelcan directamente
 
 ### Paso 2: Colocación de los Mods (DLLs)
 1. Descarga las DLLs compiladas de los mods o realiza tu propia compilación local usando un compilador de C#/.NET.
-2. Navega al directorio de plugins de BepInEx en tu instalación de **HumanitZ**:
+2. Navega al directorio de plugins de BepInEx en tu instalación de **Human Host**:
    * Ruta: `[Directorio del Juego]\BepInEx\plugins\`
 3. Copia y pega las siguientes librerías `.dll` según tus necesidades de juego:
    * `DeveloperItemSpawner.dll`
