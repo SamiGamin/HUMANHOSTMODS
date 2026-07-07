@@ -1,0 +1,36 @@
+# =========================================================================
+# Git Ignore Rules for C# / Unity / BepInEx Modding Projects
+# =========================================================================
+
+# --- Visual Studio & IDEs ---
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userprefs
+*.userosscache
+*.sln.docstates
+MonoAndroid/
+MonoTouch/
+x64/
+x86/
+
+# --- Build Outputs (MSBuild / C#) ---
+[Bb]in/
+[Oo]bj/
+
+# --- Logs & Diagnostics ---
+*.log
+*.log.*
+*.tlog
+
+# --- OS & Temporary Files ---
+[Tt]emp/
+[Tt]mp/
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
